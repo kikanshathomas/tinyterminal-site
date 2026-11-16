@@ -7,38 +7,128 @@
 <meta name="description" content="Run a tiny airport. Optional rewarded ads only, and no pop-up ads, ever. Coming soon to Google Play.">
 <link rel="canonical" href="https://tinyterminal.app/">
 <meta name="theme-color" content="#fffdf9">
-<link rel="icon" type="image/png" href="/assets/img/icon-512.png">
-<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+<meta property="og:site_name" content="Tiny Terminal">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tiny Terminal: Idle Airport">
+<meta property="og:description" content="Run a tiny airport. Optional rewarded ads only, and no pop-up ads, ever. Coming soon to Google Play.">
+<meta property="og:url" content="https://tinyterminal.app/">
+<meta property="og:image" content="https://tinyterminal.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tiny Terminal: a small top-down airport with planes at the gates">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tiny Terminal: Idle Airport">
+<meta name="twitter:description" content="Run a tiny airport. Optional rewarded ads only, and no pop-up ads, ever. Coming soon to Google Play.">
+<meta name="twitter:image" content="https://tinyterminal.app/assets/img/og.png">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/"><img src="/assets/img/icon-512.png" alt="" width="32" height="32"><span class="wordmark"><span class="tiny">Tiny</span> Terminal</span></a>
+    <a class="brand" href="/"><img src="/favicon-32x32.png" alt="" width="32" height="32"><span class="wordmark"><span class="tiny">Tiny</span> Terminal</span></a>
+    <nav class="nav" aria-label="Site">
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
   </div>
 </header>
-<main class="wrap">
-  <section class="hero">
-    <img class="icon" src="/assets/img/icon-512.png" alt="Tiny Terminal app icon" width="112" height="112">
-    <h1><span class="tiny">Tiny</span> Terminal</h1>
-    <p class="sub">Idle Airport</p>
-    <div class="pitch">
-      <p>Build a small airport into a busy hub, one passenger at a time.</p>
-      <p>Run a tiny airport. Optional rewarded ads only, and no pop-up ads, ever.</p>
-    </div>
-    <p class="soon">Coming soon to Google Play</p>
+<main id="main">
+  <section class="hero wrap">
+    <picture><source srcset="/assets/img/icon-256.webp" type="image/webp"><img class="icon" src="/assets/img/icon-256.png" alt="Tiny Terminal app icon: a plane parked on a tile of airport apron" width="120" height="120"></picture>
+    <h1><span class="tiny">Tiny Terminal:</span> Idle Airport</h1>
+    <p class="lead">Run a tiny airport. Optional rewarded ads only, and no pop-up ads, ever.</p>
+    <p class="pill">Coming soon to Google Play</p>
+    <p class="intro">Build a small airport into a busy hub, one passenger at a time. Travelers arrive at the curb, check in, drop their bags, pass security, maybe stop at the café, and walk the jet bridge to their seat. When a plane is full, it pushes back and the next one rolls in.</p>
   </section>
-  <figure class="feature">
-    <img src="/assets/img/feature.png" alt="Tiny Terminal: a small airport with planes at the gates" width="1024" height="500">
-  </figure>
+
+  <section class="section wrap" aria-labelledby="floor">
+    <p class="eyebrow">Six station types</p>
+    <h2 id="floor">Run the floor</h2>
+    <ul>
+      <li>Upgrade check-in, bag drop, security, the café and the gates</li>
+      <li>Add lanes and staff where the queue builds up</li>
+      <li>Watch every station get richer as it levels up</li>
+      <li>At most three upgrade cards at a time, so the next step is always clear</li>
+    </ul>
+    <div class="grid">
+      <figure class="tile"><picture><source srcset="/assets/img/station-checkin.webp" type="image/webp"><img src="/assets/img/station-checkin.png" alt="Check-in at Lv 10: three wood desks, roped queue lanes and a priority lane" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Check-in<span>Lv 10</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/station-bagdrop.webp" type="image/webp"><img src="/assets/img/station-bagdrop.png" alt="Bag drop at Lv 10: three drop points on a colourful belt and an oversize belt" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Bag drop<span>Lv 10</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/station-security.webp" type="image/webp"><img src="/assets/img/station-security.png" alt="Security at Lv 10: three lanes with body scanners and a fast track sign" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Security<span>Lv 10</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/station-cafe.webp" type="image/webp"><img src="/assets/img/station-cafe.png" alt="Café at Lv 10: dark parquet floor, a rug with four tables and a booth" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Café<span>Lv 10</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/station-gate.webp" type="image/webp"><img src="/assets/img/station-gate.png" alt="Gate A1 at Lv 10: four rows of seats with charging points and a wood desk" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Gate<span>Lv 10</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/station-transfer.webp" type="image/webp"><img src="/assets/img/station-transfer.png" alt="Transfer desk at Lv 10: desks, a flight board and a fast connect walkway to the gates" width="480" height="332" loading="lazy" decoding="async"></picture><figcaption>Transfer desk<span>Lv 10</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="planes">
+    <p class="eyebrow">Three planes</p>
+    <h2 id="planes">Fill your planes</h2>
+    <ul>
+      <li>Watch passengers board and take their seats row by row</li>
+      <li>Collect and level up three planes: the quick Hopper, the Swift business jet and the 150-seat Liner</li>
+      <li>Planes are earned with coins, never sold for money</li>
+    </ul>
+    <div class="grid planes">
+      <figure class="tile"><picture><source srcset="/assets/img/plane-hopper.webp" type="image/webp"><img src="/assets/img/plane-hopper.png" alt="The Hopper, a small propeller plane, seen from above" width="580" height="310" loading="lazy" decoding="async"></picture><figcaption>Hopper<span>The quick one</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/plane-swift.webp" type="image/webp"><img src="/assets/img/plane-swift.png" alt="The Swift business jet with rear engines and a T-tail, seen from above" width="580" height="280" loading="lazy" decoding="async"></picture><figcaption>Swift<span>Business jet</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/plane-liner.webp" type="image/webp"><img src="/assets/img/plane-liner.png" alt="The Liner, a 150-seat narrow-body jet, seen from above" width="580" height="330" loading="lazy" decoding="async"></picture><figcaption>Liner<span>150 seats</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="airports">
+    <p class="eyebrow">Two airports</p>
+    <h2 id="airports">Grow your airports</h2>
+    <ul>
+      <li>Fill flights to open new wings with their own gates</li>
+      <li>Open a route to a second airport, Harbor City, with its own long pier and its own look</li>
+      <li>Older airports keep paying a share of their income through your routes</li>
+    </ul>
+    <div class="grid airports">
+      <figure class="tile"><picture><source srcset="/assets/img/airport-brookfield.webp" type="image/webp"><img src="/assets/img/airport-brookfield.png" alt="Brookfield Regional from above: three gates with planes on the apron, and check-in, bag drop, security and the café on a warm tile floor" width="520" height="900" loading="lazy" decoding="async"></picture><figcaption>Brookfield Regional<span>Warm tile, plants and green signs. Three wings.</span></figcaption></figure>
+      <figure class="tile"><picture><source srcset="/assets/img/airport-harbor.webp" type="image/webp"><img src="/assets/img/airport-harbor.png" alt="Harbor City from above: Liners at the pier over the water, and the café, check-in, security, transfers and bag drop in the hall" width="520" height="462" loading="lazy" decoding="async"></picture><figcaption>Harbor City<span>A long pier into the harbour. Three wings.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="pace">
+    <div class="two">
+      <div class="panel">
+        <h2 id="pace">Play at your own pace</h2>
+        <ul>
+          <li>Your airport keeps earning while you are away, up to a time limit you can raise</li>
+          <li>Short sessions are fine: check in a few times a day</li>
+          <li>No timers to wait on and no energy system</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2 id="ads">Ads and purchases, plainly</h2>
+        <ul>
+          <li>The only ads are rewarded videos that you choose to watch for a short coin boost, up to 12 a day</li>
+          <li>No interstitials and no forced ads, ever</li>
+          <li>One optional purchase, Remove Ads, a one-time purchase: you get the same 12 boosts a day without watching anything</li>
+          <li>No loot boxes, no paid skips and nothing else to buy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="save">
+    <div class="panel">
+      <h2 id="save">No account. Your save stays on your phone.</h2>
+      <p>There are no accounts, no sign-in and no analytics. Your progress is saved on your phone. Read the <a href="/privacy/">privacy policy</a>.</p>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
     <span>© Ubersoft LLC</span>
     <a href="mailto:support@ubersoft.pro">support@ubersoft.pro</a>
+    <a href="/support/">Support</a>
     <a href="/privacy/">Privacy</a>
   </div>
 </footer>
