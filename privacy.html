@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- privacy.html — public privacy policy. Also served at /privacy.
+     The wording is the copy of ubersoft-company games/idle-airport/store/privacy-policy.md.
+     The sitemap, the footer, and that company file all depend on this URL. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -27,7 +30,9 @@
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <style>
   :root{
-    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js) */
+    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js).
+       Names no rule uses (--gold, --coral, --apron, and the others) stay so a
+       later edit keeps the game palette. */
     --page:#f4efe6; --card:#fffdf9; --card-locked:#fbf8f2; --hairline:#e6e0d4; --chip:#efe9de;
     --ink:#2b2f36; --ink-soft:#6b7280; --ink-faint:#9b9489;
     --teal:#1f7f86; --teal-deep:#196a70; --teal-tint:#e3f0ef;
@@ -244,7 +249,9 @@ Effective date: November 17, 2026</p>
       window.addEventListener('resize',function(){if(window.innerWidth>860){lk.classList.remove('open');tg.setAttribute('aria-expanded','false');}});
     }
   })();</script>
+  <!-- Copyright stays "2026" until the calendar year passes it, then shows a range. -->
   <script>(function(){var el=document.getElementById('cpyear');if(el){var s=2026,n=new Date().getFullYear();el.textContent=(n>s)?(s+'–'+n):(''+s);}})();</script>
+  <!-- Visit counter, disclosed in privacy.html. The integrity hash has to match count.v4.js. -->
   <script data-goatcounter="https://tinyterminal.goatcounter.com/count"
           async src="https://gc.zgo.at/count.v4.js"
           crossorigin="anonymous"

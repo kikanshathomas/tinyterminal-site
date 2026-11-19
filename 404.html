@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- 404.html — GitHub Pages serves this for unknown URLs. No nav and no footer.
+     The style block below still includes the shared chrome rules so this head
+     matches the other pages; those rules match no element on this page. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -27,7 +30,9 @@
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <style>
   :root{
-    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js) */
+    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js).
+       Names no rule uses (--gold, --coral, --apron, and the others) stay so a
+       later edit keeps the game palette. */
     --page:#f4efe6; --card:#fffdf9; --card-locked:#fbf8f2; --hairline:#e6e0d4; --chip:#efe9de;
     --ink:#2b2f36; --ink-soft:#6b7280; --ink-faint:#9b9489;
     --teal:#1f7f86; --teal-deep:#196a70; --teal-tint:#e3f0ef;
@@ -124,6 +129,7 @@
     <p>The page you were looking for has pushed back, or never was. The terminal is still open.</p>
     <a class="btn" href="/">Back to the terminal</a>
   </main>
+  <!-- Visit counter, disclosed in privacy.html. The integrity hash has to match count.v4.js. -->
   <script data-goatcounter="https://tinyterminal.goatcounter.com/count"
           async src="https://gc.zgo.at/count.v4.js"
           crossorigin="anonymous"

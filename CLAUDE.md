@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 ## What this repo is
-Static marketing site for Tiny Terminal at tinyterminal.app, served by GitHub Pages. Plain static HTML and CSS. GitHub Pages builds it with Jekyll; `_config.yml` (copied from zbilltracker-site) keeps CLAUDE.md and .claude off the live site, and no file has front matter, so every page is copied as-is.
+Static marketing site for Tiny Terminal at tinyterminal.app, served by GitHub Pages. Plain static HTML and CSS. GitHub Pages builds it with Jekyll; `_config.yml` keeps CLAUDE.md, .claude, README.md, and docs/ off the live site, and no file has front matter, so every page is copied as-is. Human docs are README.md and docs/.
 Sibling repos: `tinyterminal-dev` and `tinyterminal`.
 
 ## Ubersoft working rules (Thomas, CEO, 2026-10-29)

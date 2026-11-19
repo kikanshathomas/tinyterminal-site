@@ -1,10 +1,30 @@
 # Jekyll config for the GitHub Pages build of this static site.
-# No file here has front matter, so Jekyll copies every file byte-for-byte.
+# No file here has front matter, so Jekyll copies every published file byte-for-byte.
 # This config exists only to keep repo-internal files off the live site.
+#
+# GitHub Pages currently builds with Jekyll 3.10 (pages.github.com/versions.json).
+# On Jekyll 3, `exclude` replaces the default exclude list. The defaults are
+# repeated below so a Gemfile or node_modules added later is still left out.
+# On Jekyll 4 the defaults stay and these entries are added; repeating them
+# is harmless.
 exclude:
   - CLAUDE.md
   - .claude
+  - README.md
+  - readme.md
+  - docs
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 # Keep .md files without front matter as plain static files (no rendering).
+# Combined with `exclude` above, README.md and docs/ are not copied at all.
 require_front_matter: true
 # No theme: otherwise GitHub Pages adds its default theme's assets/css/style.css.
 theme: null

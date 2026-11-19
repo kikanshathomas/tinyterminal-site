@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- index.html — home page at https://tinyterminal.app/. Static marketing page.
+     The game source is tinyterminal-dev; the Android wrap is tinyterminal. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -82,7 +84,9 @@
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <style>
   :root{
-    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js) */
+    /* Tiny Terminal tokens (ubersoft-company games/idle-airport/style/tokens.js).
+       Names no rule uses (--gold, --coral, --apron, and the others) stay so a
+       later edit keeps the game palette. */
     --page:#f4efe6; --card:#fffdf9; --card-locked:#fbf8f2; --hairline:#e6e0d4; --chip:#efe9de;
     --ink:#2b2f36; --ink-soft:#6b7280; --ink-faint:#9b9489;
     --teal:#1f7f86; --teal-deep:#196a70; --teal-tint:#e3f0ef;
@@ -438,15 +442,19 @@
 </footer>
 
 <script>
+  /* Sections with .reveal start hidden and fade in on scroll. The hero already
+     has .in, so it is visible before this runs. Reduced motion and no-JS skip it. */
   const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1, rootMargin:'0px 0px -6% 0px'});
   document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
 </script>
+  <!-- Copyright stays "2026" until the calendar year passes it, then shows a range. -->
   <script>(function(){var el=document.getElementById('cpyear');if(el){var s=2026,n=new Date().getFullYear();el.textContent=(n>s)?(s+'–'+n):(''+s);}})();</script>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
     <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
     <img id="lightboxImg" src="" alt="">
   </div>
   <script>(function(){
+    /* Lightbox. data-full is the full-size WebP. Escape or a backdrop click closes it and returns focus. */
     var lb=document.getElementById('lightbox'),img=document.getElementById('lightboxImg'),last=null;
     function open(src,alt){img.src=src;img.alt=alt||'';lb.classList.add('open');document.body.style.overflow='hidden';}
     function close(){lb.classList.remove('open');img.src='';document.body.style.overflow='';if(last){last.focus();last=null;}}
@@ -465,6 +473,7 @@
       window.addEventListener('resize',function(){if(window.innerWidth>860){lk.classList.remove('open');tg.setAttribute('aria-expanded','false');}});
     }
   })();</script>
+  <!-- Visit counter, disclosed in privacy.html. The integrity hash has to match count.v4.js. -->
   <script data-goatcounter="https://tinyterminal.goatcounter.com/count"
           async src="https://gc.zgo.at/count.v4.js"
           crossorigin="anonymous"
